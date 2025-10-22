@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  display: flex;
+}
+
+.player{
+  padding: 5px;
+  margin-inline: 5px;
+  width: 100%;
+}
+
+.score{
+  background-color: lightblue;
+  width: 100%;
+  border-radius: 5px;
+  padding: 2px;
+  margin-bottom: 5px;
+}
+
+.points{
+  background-color: yellow;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.generate{
+  height: 40%;
+  margin-block: auto;
+  width: 100%;
+  border: none;
+  background-color: lightgreen;
+  border-radius: 5px;
+}
