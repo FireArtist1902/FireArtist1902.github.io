@@ -47,3 +47,8 @@
     font-weight: 700;
     font-size: medium;
 }
+
+#btn:hover
+{
+    cursor: pointer;
+}
