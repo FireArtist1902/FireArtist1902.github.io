@@ -42,9 +42,12 @@ scores.text(`${round}/10`)
 cardText.text(shuffled[round - 1].en);
 
 rightBtn.bind("click", () =>{
+    if(round <= 10)
+    {
     if(input.val() == shuffled[round - 1].ua)
     {
         round++;
+        console.log(round)
         correct++;
         countCor.text(correct);
         input.val("")
@@ -64,7 +67,8 @@ rightBtn.bind("click", () =>{
             alert("Введіть значення у поле");
         }
     }
-    if(round == 10 && correct + incorrect == 10)
+}
+    else    
     {
         if(correct == 10)
         {
