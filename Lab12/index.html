@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back" />
+    <title>lab11</title>
+</head>
+<body>
+    <div class="container">
+        <div class="difficult">
+            <input type="radio" id="easy" value="0" name="diff">Легко<br>
+            <input type="radio" id="normal" value="1" name="diff">Нормально<br>
+            <input type="radio" id="hard" value="2" name="diff">Складно<br>
+            <button id="diffBtn">Встановити</button>
+        </div>
+        <div class="mainCards">
+            <div class="card">
+                <div id="cardText">textExample</div>
+            </div>
+            <div class="controls">
+                <div id="leftButton"><i><img src="icons/arrow_back.svg" alt=""></i></div>
+                <p id="scores">0/10</p>
+                <div id="rightButton"><i><img src="icons/arrow_forward.svg" alt=""></i></div>
+            </div>
+            <input type="text" name="" id="input" placeholder="Введіть переклад">
+            <p class="stat">Статистика</p>
+            <div class="statBlock">
+                <div class="correct">
+                    <p>Вірно</p>
+                    <p id="countCor">0</p>
+                </div>
+                <div class="incorrect">
+                    <p>Невірно</p>
+                    <p id="countIncor">0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
