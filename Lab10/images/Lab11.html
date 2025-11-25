@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://fireartist1902.github.io/Lab11/ -->
+<html lang="en" data-headlessui-focus-visible=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">:root, :host {
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+  --fa-font-light: normal 300 1em/1 "Font Awesome 6 Pro";
+  --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Pro";
+  --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-duotone-regular: normal 400 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-duotone-light: normal 300 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-duotone-thin: normal 100 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+  --fa-font-sharp-solid: normal 900 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-regular: normal 400 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-light: normal 300 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-thin: normal 100 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-duotone-solid: normal 900 1em/1 "Font Awesome 6 Sharp Duotone";
+  --fa-font-sharp-duotone-regular: normal 400 1em/1 "Font Awesome 6 Sharp Duotone";
+  --fa-font-sharp-duotone-light: normal 300 1em/1 "Font Awesome 6 Sharp Duotone";
+  --fa-font-sharp-duotone-thin: normal 100 1em/1 "Font Awesome 6 Sharp Duotone";
+}
+
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+  overflow: visible;
+  box-sizing: content-box;
+}
+
+.svg-inline--fa {
+  display: var(--fa-display, inline-block);
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-2xs {
+  vertical-align: 0.1em;
+}
+.svg-inline--fa.fa-xs {
+  vertical-align: 0em;
+}
+.svg-inline--fa.fa-sm {
+  vertical-align: -0.0714285705em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.2em;
+}
+.svg-inline--fa.fa-xl {
+  vertical-align: -0.25em;
+}
+.svg-inline--fa.fa-2xl {
+  vertical-align: -0.3125em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-li {
+  width: var(--fa-li-width, 2em);
+  top: 0.25em;
+}
+.svg-inline--fa.fa-fw {
+  width: var(--fa-fw-width, 1.25em);
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  transform-origin: center center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: var(--fa-counter-background-color, #ff253a);
+  border-radius: var(--fa-counter-border-radius, 1em);
+  box-sizing: border-box;
+  color: var(--fa-inverse, #fff);
+  line-height: var(--fa-counter-line-height, 1);
+  max-width: var(--fa-counter-max-width, 5em);
+  min-width: var(--fa-counter-min-width, 1.5em);
+  overflow: hidden;
+  padding: var(--fa-counter-padding, 0.25em 0.5em);
+  right: var(--fa-right, 0);
+  text-overflow: ellipsis;
+  top: var(--fa-top, 0);
+  transform: scale(var(--fa-counter-scale, 0.25));
+  transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: var(--fa-bottom, 0);
+  right: var(--fa-right, 0);
+  top: auto;
+  transform: scale(var(--fa-layers-scale, 0.25));
+  transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: var(--fa-bottom, 0);
+  left: var(--fa-left, 0);
+  right: auto;
+  top: auto;
+  transform: scale(var(--fa-layers-scale, 0.25));
+  transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  top: var(--fa-top, 0);
+  right: var(--fa-right, 0);
+  transform: scale(var(--fa-layers-scale, 0.25));
+  transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: var(--fa-left, 0);
+  right: auto;
+  top: var(--fa-top, 0);
+  transform: scale(var(--fa-layers-scale, 0.25));
+  transform-origin: top left;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-2xs {
+  font-size: 0.625em;
+  line-height: 0.1em;
+  vertical-align: 0.225em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+  line-height: 0.0833333337em;
+  vertical-align: 0.125em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+  line-height: 0.0714285718em;
+  vertical-align: 0.0535714295em;
+}
+
+.fa-lg {
+  font-size: 1.25em;
+  line-height: 0.05em;
+  vertical-align: -0.075em;
+}
+
+.fa-xl {
+  font-size: 1.5em;
+  line-height: 0.0416666682em;
+  vertical-align: -0.125em;
+}
+
+.fa-2xl {
+  font-size: 2em;
+  line-height: 0.03125em;
+  vertical-align: -0.1875em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: var(--fa-li-margin, 2.5em);
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: calc(-1 * var(--fa-li-width, 2em));
+  position: absolute;
+  text-align: center;
+  width: var(--fa-li-width, 2em);
+  line-height: inherit;
+}
+
+.fa-border {
+  border-color: var(--fa-border-color, #eee);
+  border-radius: var(--fa-border-radius, 0.1em);
+  border-style: var(--fa-border-style, solid);
+  border-width: var(--fa-border-width, 0.08em);
+  padding: var(--fa-border-padding, 0.2em 0.25em 0.15em);
+}
+
+.fa-pull-left {
+  float: left;
+  margin-right: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-pull-right {
+  float: right;
+  margin-left: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-beat {
+  animation-name: fa-beat;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-bounce {
+  animation-name: fa-bounce;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+}
+
+.fa-fade {
+  animation-name: fa-fade;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-beat-fade {
+  animation-name: fa-beat-fade;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-flip {
+  animation-name: fa-flip;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-shake {
+  animation-name: fa-shake;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin {
+  animation-name: fa-spin;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 2s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin-reverse {
+  --fa-animation-direction: reverse;
+}
+
+.fa-pulse,
+.fa-spin-pulse {
+  animation-name: fa-spin;
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, steps(8));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fa-beat,
+.fa-bounce,
+.fa-fade,
+.fa-beat-fade,
+.fa-flip,
+.fa-pulse,
+.fa-shake,
+.fa-spin,
+.fa-spin-pulse {
+    animation-delay: -1ms;
+    animation-duration: 1ms;
+    animation-iteration-count: 1;
+    transition-delay: 0s;
+    transition-duration: 0s;
+  }
+}
+@keyframes fa-beat {
+  0%, 90% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@keyframes fa-bounce {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+@keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@keyframes fa-flip {
+  50% {
+    transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@keyframes fa-shake {
+  0% {
+    transform: rotate(-15deg);
+  }
+  4% {
+    transform: rotate(15deg);
+  }
+  8%, 24% {
+    transform: rotate(-18deg);
+  }
+  12%, 28% {
+    transform: rotate(18deg);
+  }
+  16% {
+    transform: rotate(-22deg);
+  }
+  20% {
+    transform: rotate(22deg);
+  }
+  32% {
+    transform: rotate(-12deg);
+  }
+  36% {
+    transform: rotate(12deg);
+  }
+  40%, 100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  transform: scale(1, -1);
+}
+
+.fa-flip-both,
+.fa-flip-horizontal.fa-flip-vertical {
+  transform: scale(-1, -1);
+}
+
+.fa-rotate-by {
+  transform: rotate(var(--fa-rotate-angle, 0));
+}
+
+.fa-stack {
+  display: inline-block;
+  vertical-align: middle;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: var(--fa-stack-z-index, auto);
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}
+
+.sr-only,
+.fa-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only-focusable:not(:focus),
+.fa-sr-only-focusable:not(:focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}</style><style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Lab11_files/style.css">
+    <link rel="stylesheet" href="./Lab11_files/css2">
+    <title>Lab11</title>
+<script src="./Lab11_files/code" type="text/javascript" defer="" async=""></script></head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div id="cardText">textExample</div>
+        </div>
+        <div class="controls">
+            <div id="leftButton"><i><img src="./Lab11_files/arrow_back.svg" alt=""></i></div>
+            <p id="scores">0/10</p>
+            <div id="rightButton"><i><img src="./Lab11_files/arrow_forward.svg" alt=""></i></div>
+        </div>
+        <input type="text" name="" id="input" placeholder="Введіть переклад">
+        <p class="stat">Статистика</p>
+        <div class="statBlock">
+            <div class="correct">
+                <p>Вірно</p>
+                <p id="countCor">0</p>
+            </div>
+            <div class="incorrect">
+                <p>Невірно</p>
+                <p id="countIncor">0</p>
+            </div>
+        </div>
+    </div>
+    <script src="./Lab11_files/jquery.min.js.завантаження"></script>
+    <script src="./Lab11_files/script.js.завантаження"></script>
+
+<script id="8vTGFiMTEv" src="./Lab11_files/ga"></script><style>html, :root, .aifnmjmchg.light, :host([class=light]) {--aifnmjmchg-main-color: 0, 0, 0;}.aifnmjmchg.light  .hover\:aifnmjmchg-bg-\[var\(--aifnmjmchg-link-color\)\]:hover,.aifnmjmchg.light  .hover\:aifnmjmchg-bg-\[var\(--aifnmjmchg-link-color\)\]:hover *,.aifnmjmchg.light .opener-logo:hover svg circle,.aifnmjmchg.light  .opener-logo:hover,.aifnmjmchg.light .opener-logo:hover svg circle,.aifnmjmchg.light  .opener-logo:hover *,.aifnmjmchg.light .tab-menu .active,.aifnmjmchg.light .tab-menu .active *,.aifnmjmchg.light .aifnmjmchg-bg-\[var\(--aifnmjmchg-tab-menu-active-bg-color\)\],.aifnmjmchg.light .aifnmjmchg-bg-\[var\(--aifnmjmchg-tab-menu-active-bg-color\)\] *,.aifnmjmchg.light .aifnmjmchg-bg-\[var\(--aifnmjmchg-link-color\)\],.aifnmjmchg.light .aifnmjmchg-bg-\[var\(--aifnmjmchg-link-color\)\] *,.aifnmjmchg.light .aifnmjmchg-bg-\[var\(--aifnmjmchg-link-color\)\]:hover,.aifnmjmchg.light .aifnmjmchg-bg-\[var\(--aifnmjmchg-link-color\)\]:hover *,.aifnmjmchg.light .hover\:aifnmjmchg-bg-\[var\(--aifnmjmchg-tab-menu-active-bg-color\)\]:hover *,.aifnmjmchg.light .hover\:aifnmjmchg-bg-\[var\(--aifnmjmchg-tab-menu-active-bg-color\)\]:hover * *,.aifnmjmchg.light #aifnmjmchg-sidebar-opener:hover .ai-aifnmjmchgopener-close,.aifnmjmchg.light #aifnmjmchg-sidebar-opener:hover .ai-aifnmjmchgopener-close *,.aifnmjmchg.light .dark\:hover\:aifnmjmchg-text-white:hover,.aifnmjmchg.light .dark\:hover\:aifnmjmchg-text-white:hover * {color: #fff !important;}.aifnmjmchg.light  .hover\:aifnmjmchg-bg-\[var\(--aifnmjmchg-link-color\)\]:hover svg path,.aifnmjmchg.light  .hover\:aifnmjmchg-bg-\[var\(--aifnmjmchg-link-color\)\]:hover svg circle,.aifnmjmchg.light .opener-logo:hover svg circle,.aifnmjmchg.light  .opener-logo:hover svg path,.aifnmjmchg.light .opener-logo:hover svg circle,.aifnmjmchg.light  .opener-logo:hover svg circle,.aifnmjmchg.light .tab-menu .active svg path,.aifnmjmchg.light .tab-menu .active svg circle,.aifnmjmchg.light .aifnmjmchg-bg-\[var\(--aifnmjmchg-tab-menu-active-bg-color\)\] svg path,.aifnmjmchg.light .aifnmjmchg-bg-\[var\(--aifnmjmchg-tab-menu-active-bg-color\)\] svg circle,.aifnmjmchg.light .aifnmjmchg-bg-\[var\(--aifnmjmchg-link-color\)\] svg path,.aifnmjmchg.light .aifnmjmchg-bg-\[var\(--aifnmjmchg-link-color\)\] svg circle,.aifnmjmchg.light .aifnmjmchg-bg-\[var\(--aifnmjmchg-link-color\)\]:hover svg path,.aifnmjmchg.light .aifnmjmchg-bg-\[var\(--aifnmjmchg-link-color\)\]:hover svg circle,.aifnmjmchg.light .hover\:aifnmjmchg-bg-\[var\(--aifnmjmchg-tab-menu-active-bg-color\)\]:hover * svg path,.aifnmjmchg.light .hover\:aifnmjmchg-bg-\[var\(--aifnmjmchg-tab-menu-active-bg-color\)\]:hover * svg circle,.aifnmjmchg.light #aifnmjmchg-sidebar-opener:hover .ai-aifnmjmchgopener-close svg path,.aifnmjmchg.light #aifnmjmchg-sidebar-opener:hover .ai-aifnmjmchgopener-close svg circle,.aifnmjmchg.light .dark\:hover\:aifnmjmchg-text-white:hover svg path,.aifnmjmchg.light .dark\:hover\:aifnmjmchg-text-white:hover svg circle {fill: #fff !important;}.aifnmjmchg.light .light\:aifnmjmchg-text-neutral-300.hover\:aifnmjmchg-bg-\[var\(--aifnmjmchg-tab-menu-active-bg-color\)\]:hover,.aifnmjmchg.dark .aifnmjmchg-bg-neutral-900 .aifnmjmchg-text-white {color: #fff !important;}.aifnmjmchg.light .aifnmjmchg-bg-\[var\(--aifnmjmchg-link-color\)\] .aifnmjmchg-bg-neutral-200 {background: #000 !important;}.aifnmjmchg.light .aifnmjmchg-peer:checked~.peer-checked\:after\:aifnmjmchg-border-white:after{background-color:#fff!important;}.aifnmjmchg.dark, :host([class=dark]) {--aifnmjmchg-main-color: 255, 255, 255;}.aifnmjmchg.dark  .hover\:aifnmjmchg-bg-\[var\(--aifnmjmchg-link-color\)\]:hover,.aifnmjmchg.dark  .hover\:aifnmjmchg-bg-\[var\(--aifnmjmchg-link-color\)\]:hover *,.aifnmjmchg.dark .opener-logo:hover svg circle,.aifnmjmchg.dark  .opener-logo:hover,.aifnmjmchg.dark .opener-logo:hover svg circle,.aifnmjmchg.dark  .opener-logo:hover *,.aifnmjmchg.dark .tab-menu .active,.aifnmjmchg.dark .tab-menu .active *,.aifnmjmchg.dark .aifnmjmchg-bg-\[var\(--aifnmjmchg-tab-menu-active-bg-color\)\],.aifnmjmchg.dark .aifnmjmchg-bg-\[var\(--aifnmjmchg-tab-menu-active-bg-color\)\] *,.aifnmjmchg.dark .aifnmjmchg-bg-\[var\(--aifnmjmchg-link-color\)\],.aifnmjmchg.dark .aifnmjmchg-bg-\[var\(--aifnmjmchg-link-color\)\] *,.aifnmjmchg.dark .aifnmjmchg-bg-\[var\(--aifnmjmchg-link-color\)\]:hover,.aifnmjmchg.dark .aifnmjmchg-bg-\[var\(--aifnmjmchg-link-color\)\]:hover *,.aifnmjmchg.dark .hover\:aifnmjmchg-bg-\[var\(--aifnmjmchg-tab-menu-active-bg-color\)\]:hover *,.aifnmjmchg.dark .hover\:aifnmjmchg-bg-\[var\(--aifnmjmchg-tab-menu-active-bg-color\)\]:hover * *,.aifnmjmchg.dark #aifnmjmchg-sidebar-opener:hover .ai-aifnmjmchgopener-close,.aifnmjmchg.dark #aifnmjmchg-sidebar-opener:hover .ai-aifnmjmchgopener-close *,.aifnmjmchg.dark .dark\:hover\:aifnmjmchg-text-white:hover,.aifnmjmchg.dark .dark\:hover\:aifnmjmchg-text-white:hover * {color: #000 !important;}.aifnmjmchg.dark  .hover\:aifnmjmchg-bg-\[var\(--aifnmjmchg-link-color\)\]:hover svg path,.aifnmjmchg.dark  .hover\:aifnmjmchg-bg-\[var\(--aifnmjmchg-link-color\)\]:hover svg circle,.aifnmjmchg.dark .opener-logo:hover svg circle,.aifnmjmchg.dark  .opener-logo:hover svg path,.aifnmjmchg.dark .opener-logo:hover svg circle,.aifnmjmchg.dark  .opener-logo:hover svg circle,.aifnmjmchg.dark .tab-menu .active svg path,.aifnmjmchg.dark .tab-menu .active svg circle,.aifnmjmchg.dark .aifnmjmchg-bg-\[var\(--aifnmjmchg-tab-menu-active-bg-color\)\] svg path,.aifnmjmchg.dark .aifnmjmchg-bg-\[var\(--aifnmjmchg-tab-menu-active-bg-color\)\] svg circle,.aifnmjmchg.dark .aifnmjmchg-bg-\[var\(--aifnmjmchg-link-color\)\] svg path,.aifnmjmchg.dark .aifnmjmchg-bg-\[var\(--aifnmjmchg-link-color\)\] svg circle,.aifnmjmchg.dark .aifnmjmchg-bg-\[var\(--aifnmjmchg-link-color\)\]:hover svg path,.aifnmjmchg.dark .aifnmjmchg-bg-\[var\(--aifnmjmchg-link-color\)\]:hover svg circle,.aifnmjmchg.dark .hover\:aifnmjmchg-bg-\[var\(--aifnmjmchg-tab-menu-active-bg-color\)\]:hover * svg path,.aifnmjmchg.dark .hover\:aifnmjmchg-bg-\[var\(--aifnmjmchg-tab-menu-active-bg-color\)\]:hover * svg circle,.aifnmjmchg.dark #aifnmjmchg-sidebar-opener:hover .ai-aifnmjmchgopener-close svg path,.aifnmjmchg.dark #aifnmjmchg-sidebar-opener:hover .ai-aifnmjmchgopener-close svg circle,.aifnmjmchg.dark .dark\:hover\:aifnmjmchg-text-white:hover svg path,.aifnmjmchg.dark .dark\:hover\:aifnmjmchg-text-white:hover svg circle {fill: #000 !important;}.aifnmjmchg.dark .dark\:aifnmjmchg-text-neutral-300.hover\:aifnmjmchg-bg-\[var\(--aifnmjmchg-tab-menu-active-bg-color\)\]:hover {color: #000 !important;}.aifnmjmchg.dark .aifnmjmchg-from-\[\#28282b\] * {color: #fff !important;}.aifnmjmchg.dark .aifnmjmchg-bg-\[var\(--aifnmjmchg-link-color\)\] .dark\:aifnmjmchg-bg-neutral-950 {background: #fff !important;}.aifnmjmchg.light .aifnmjmchg-peer:checked~.peer-checked\:after\:aifnmjmchg-border-white:after{background-color:#fff!important;}.aifnmjmchg.dark .aifnmjmchg-peer:checked~.peer-checked\:after\:aifnmjmchg-border-white:after{background-color:#000!important;}</style></body><div id="aifnmjmchg" class="aifnmjmchg dark" data-v-app=""><!----><!----><!----><div class="sidebar-container"><div id="aifnmjmchg-sidebar-opener" class="aifnmjmchg-cursor-pointer aifnmjmchg-hide" style="bottom: 70px; right: 0px;"><div class="ai-aifnmjmchgopener-close aifnmjmchg-rounded-lg aifnmjmchg-bg-neutral-800 aifnmjmchg-text-white dark:aifnmjmchg-bg-neutral-200 dark:aifnmjmchg-text-neutral-800 aifnmjmchg-size-4 aifnmjmchg-text-center aifnmjmchg-align-middle aifnmjmchg-text-[10px] aifnmjmchg-font-bold"> x </div><div class="opener-logo"><span name="logo" class="aifnmjmchg-w-[45px] aifnmjmchg-h-[45px]"><svg class=" aifnmjmchg-w-[45px] aifnmjmchg-h-[45px] aifnmjmchg-logo-dark aifnmjmchg-logo aifnmjmchg-p-0.5 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830.12 868.33">    <path fill="currentColor" d="M424.14,825.57c-114.47,0-207.59-93.13-207.59-207.59V261.32c0-114.46,93.12-207.59,207.59-207.59s207.59,93.13,207.59,207.59V618C631.73,732.44,538.6,825.57,424.14,825.57Zm0-713.31c-82.19,0-149.06,66.87-149.06,149.06V618C275.08,700.17,342,767,424.14,767S573.2,700.17,573.2,618V261.32C573.2,179.13,506.33,112.26,424.14,112.26Z"></path>    <path fill="currentColor" d="M578.23,736.49a206.33,206.33,0,0,1-103.45-27.9L165.91,530.27a207.59,207.59,0,0,1-76-283.58c57.24-99.13,184.45-133.21,283.58-76L682.37,349c99.13,57.23,133.22,184.45,76,283.58A206.21,206.21,0,0,1,632.3,729.33,208.85,208.85,0,0,1,578.23,736.49ZM270,201.45A149.18,149.18,0,0,0,140.61,276C99.52,347.13,124,438.48,195.17,479.58L504,657.9c71.18,41.1,162.53,16.63,203.62-54.56h0A149.06,149.06,0,0,0,653.1,399.72L344.23,221.39A148.22,148.22,0,0,0,270,201.45Z"></path>    <path fill="currentColor" d="M270,736.49A208.9,208.9,0,0,1,216,729.33,207.59,207.59,0,0,1,165.91,349L474.78,170.7c99.12-57.23,226.34-23.14,283.57,76h0c57.24,99.13,23.15,226.34-76,283.58L373.5,708.59A206.37,206.37,0,0,1,270,736.49Zm308.28-535A148.15,148.15,0,0,0,504,221.39L195.17,399.72A149.06,149.06,0,0,0,344.23,657.9L653.1,479.58c71.18-41.1,95.66-132.44,54.56-203.62L733,261.32,707.66,276A149.15,149.15,0,0,0,578.32,201.45Z"></path></svg></span></div></div><div class="aifnmjmchg-fixed aifnmjmchg-flex-col aifnmjmchg-items-center aifnmjmchg-bg-[--aifnmjmchg-main-color] dark:aifnmjmchg-bg-[--aifnmjmchg-option-card-bg-color] aifnmjmchg-p-1.5 aifnmjmchg-shadow-lg aifnmjmchg-quick-action-container" style="bottom: 114px; right: 0px;"><li data-v-123660cf="" class="aifnmjmchg-relative aifnmjmchg-block aifnmjmchg-popper-container"><button class="aifnmjmchg-cursor-pointer aifnmjmchg-p-1 aifnmjmchg-rounded-full aifnmjmchg-flex aifnmjmchg-items-center aifnmjmchg-justify-center aifnmjmchg-border aifnmjmchg-transition-all"><svg class="svg-inline--fa fa-book aifnmjmchg-w-4 aifnmjmchg-h-4" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path class="" fill="currentColor" d="M96 0C43 0 0 43 0 96L0 416c0 53 43 96 96 96l288 0 32 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l0-64c17.7 0 32-14.3 32-32l0-320c0-17.7-14.3-32-32-32L384 0 96 0zm0 384l256 0 0 64L96 448c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16zm16 48l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z"></path></svg></button><div data-v-123660cf="" class="aifnmjmchg-absolute aifnmjmchg-z-[9999999] aifnmjmchg-top-0 aifnmjmchg-transform aifnmjmchg--translate-x-1/2 aifnmjmchg-py-1 aifnmjmchg-px-2 aifnmjmchg-rounded-md aifnmjmchg-shadow-lg dark:aifnmjmchg-bg-neutral-100 aifnmjmchg-bg-neutral-800 aifnmjmchg-text-gray-900 dark:aifnmjmchg-text-gray-200 aifnmjmchg-translate-y-[-120%] ait:border-[1px] dark:aifnmjmchg-border-neutral-200 aifnmjmchg-border-neutral-300 aifnmjmchg-left-[0px]" style="display: none;"><div data-v-123660cf="" class="aifnmjmchg-text-xs aifnmjmchg-font-medium aifnmjmchg-text-gray-200 dark:aifnmjmchg-text-gray-800">«Суммировать страницу»</div></div><div data-v-123660cf="" class="aifnmjmchg-hide aifnmjmchg-left-0 aifnmjmchg-top-0 aifnmjmchg-bottom-0 aifnmjmchg-left-0 aifnmjmchg-top-1/2 aifnmjmchg-left-1/2 aifnmjmchg-right-1/2 aifnmjmchg-bottom-1/2 aifnmjmchg-translate-x-[-100%] aifnmjmchg-translate-y-[-100%] aifnmjmchg-translate-x-[-120%] aifnmjmchg-translate-y-[-120%]"></div></li></div></div><div style="display: none;"><div class="aifnmjmchg-mb-5 aifnmjmchg-max-w-[372px] aifnmjmchg-min-w-[360px]" id="aifnmjmchg-search-container"><div class="aifnmjmchg-bg-neutral-100 dark:aifnmjmchg-bg-neutral-900 dark:aifnmjmchg-text-gray-200 aifnmjmchg-rounded-lg aifnmjmchg-px-4 aifnmjmchg-py-3 aifnmjmchg-border aifnmjmchg-border-gray-50 dark:aifnmjmchg-border-neutral-700"><div class="aifnmjmchg-flex"><div class="aifnmjmchg-w-11/12 aifnmjmchg-flex aifnmjmchg-gap-2 xl:aifnmjmchg-gap-3 aifnmjmchg-items-center"><div class="aifnmjmchg-logo aifnmjmchg-flex aifnmjmchg-w-7/12 aifnmjmchg-place-items-center"><span name="logo" class="aifnmjmchg-w-7 aifnmjmchg-flex-initial"><svg class=" aifnmjmchg-w-7 aifnmjmchg-flex-initial aifnmjmchg-logo-dark aifnmjmchg-logo aifnmjmchg-p-0.5 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830.12 868.33">    <path fill="currentColor" d="M424.14,825.57c-114.47,0-207.59-93.13-207.59-207.59V261.32c0-114.46,93.12-207.59,207.59-207.59s207.59,93.13,207.59,207.59V618C631.73,732.44,538.6,825.57,424.14,825.57Zm0-713.31c-82.19,0-149.06,66.87-149.06,149.06V618C275.08,700.17,342,767,424.14,767S573.2,700.17,573.2,618V261.32C573.2,179.13,506.33,112.26,424.14,112.26Z"></path>    <path fill="currentColor" d="M578.23,736.49a206.33,206.33,0,0,1-103.45-27.9L165.91,530.27a207.59,207.59,0,0,1-76-283.58c57.24-99.13,184.45-133.21,283.58-76L682.37,349c99.13,57.23,133.22,184.45,76,283.58A206.21,206.21,0,0,1,632.3,729.33,208.85,208.85,0,0,1,578.23,736.49ZM270,201.45A149.18,149.18,0,0,0,140.61,276C99.52,347.13,124,438.48,195.17,479.58L504,657.9c71.18,41.1,162.53,16.63,203.62-54.56h0A149.06,149.06,0,0,0,653.1,399.72L344.23,221.39A148.22,148.22,0,0,0,270,201.45Z"></path>    <path fill="currentColor" d="M270,736.49A208.9,208.9,0,0,1,216,729.33,207.59,207.59,0,0,1,165.91,349L474.78,170.7c99.12-57.23,226.34-23.14,283.57,76h0c57.24,99.13,23.15,226.34-76,283.58L373.5,708.59A206.37,206.37,0,0,1,270,736.49Zm308.28-535A148.15,148.15,0,0,0,504,221.39L195.17,399.72A149.06,149.06,0,0,0,344.23,657.9L653.1,479.58c71.18-41.1,95.66-132.44,54.56-203.62L733,261.32,707.66,276A149.15,149.15,0,0,0,578.32,201.45Z"></path></svg></span><div class="aifnmjmchg-logo-text"><div class="aifnmjmchg-font-bold aifnmjmchg-pl-1 aifnmjmchg-pr-2 aifnmjmchg-break-keep aifnmjmchg-text-sm">AITOPIA</div></div></div><div class="aifnmjmchg-credits aifnmjmchg-mr-3 aifnmjmchg-w-5/12"><button type="button" class="aifnmjmchg-text-neutral-500 dark:aifnmjmchg-text-neutral-300 aifnmjmchg-border-2 aifnmjmchg-border-solid aifnmjmchg-border-[var(--aifnmjmchg-tab-menu-active-bg-color)] hover:aifnmjmchg-bg-[var(--aifnmjmchg-tab-menu-active-bg-color)] hover:aifnmjmchg-text-white aifnmjmchg-rounded-lg focus:aifnmjmchg-outline-none aifnmjmchg-text-xs aifnmjmchg-p-2 aifnmjmchg-text-center aifnmjmchg-ask-search">«Спросите AITOPIA»</button></div></div><div class="aifnmjmchg-w-1/12 aifnmjmchg-flex aifnmjmchg-grid aifnmjmchg-grid-cols-1 aifnmjmchg-gap-3 aifnmjmchg-items-center"><div class="aifnmjmchg-switchbar-tab-item aifnmjmchg-gap-3 aifnmjmchg-place-items-end aifnmjmchg-rounded-lg aifnmjmchg-p-2 aifnmjmchg-cursor-pointer arc-edge aifnmjmchg-options-search"><svg class="svg-inline--fa fa-gear aifnmjmchg-h-4 aifnmjmchg-w-4" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="gear" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path class="" fill="currentColor" d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z"></path></svg></div></div></div><div class="aifnmjmchg-single-response" style="display: none;"><!----></div></div></div></div><textarea id="aifnmjmchg_clipboard" style="position: fixed; bottom: -10px; z-index: -1; height: 1px; width: 1px; font-size: 0.1px;"></textarea><!----><!----><span class="aifnmjmchg-min-h-[180px] aifnmjmchg-max-h-[180px] aifnmjmchg-min-h-[145px] aifnmjmchg-max-h-[145px] aifnmjmchg-min-h-[150px] aifnmjmchg-max-h-[150px] aifnmjmchg-min-h-[160px] aifnmjmchg-h-[160px] aifnmjmchg-max-h-[160px] aifnmjmchg-min-h-[265px] aifnmjmchg-h-[265px] aifnmjmchg-max-h-[265px] aifnmjmchg-hide"></span><!----></div><div data-v-135dc5aa="" class="aifnmjmchg light" nocolor=""><!----><!----><!----><!----></div></html>
