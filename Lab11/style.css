@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container
+{
+    margin-left: auto;
+    margin-right: auto;
+    padding-block: 20px;
+    width: 70%;
+    text-align: center;
+}
+
+.card{
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 114px -7px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 10px 10px 114px -7px rgba(0,0,0,0.6);
+    -moz-box-shadow: 10px 10px 114px -7px rgba(0,0,0,0.6);
+    width: 100%;
+    padding-block: 50px;
+    border-radius: 10px;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+#scores{
+    font-weight: 600;
+}
+
+#leftButton{
+    margin-right: 20px;
+}
+
+#rightButton{
+    margin-left: 20px;
+}
+
+#leftButton:hover, #rightButton:hover{
+    cursor: pointer;
+}
+
+#input{
+    border:none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.stat{
+    font-weight: 700;
+    color: blue;
+}
+
+.statBlock{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.correct{
+    font-weight: 700;
+    color: green
+}
+
+.incorrect{
+    font-weight: 700;
+    color: red;
+}
